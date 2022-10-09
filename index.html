@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Meeting Minutes</title>
+    <meta name="author" content="Zach Yuen">
+    <link rel="icon" type="image/png" href="/faviconSmile.png">
+  </head>
+
+  <body>
+    <header>
+        <h1>Meeting Minutes Website</h1>
+        <h2>Topic: Brainstorming Project Ideas</h2>
+        <h2>10-6-2022</h2>
+        <nav>
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="#Meeting Info">Meeting Info</a></li>
+                <li><a href="#Diagrams">Diagrams</a></li>
+                <li><a href="#Video/Audio Recording">Video/Audio Recording</a></li>
+                <li><a href="#Footer">Footer</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <hr>
+
+    <main>
+        <section>
+            <h2 id="Meeting Info">Meeting Info</h2>
+
+            <h4>Attendance:</h4>
+            <ul>
+                <li>Jeff</li>
+                <li>Kevin</li>
+                <li>Sasha</li>
+            </ul>
+
+            <h4>Agenda:</h4>
+            <ol>
+                <li>Icebreaker</li>
+                <li>Review</li>
+                <li>Brainstorm</li>
+                <li>Plan</li>
+                <li>Wrap up</li>
+            </ol>
+
+            <h4>Unfinished Business:</h4>
+            <ul>
+                <li>Finish setting guidelines</li>
+                <li>Talk about <i>HTML</i> elements</li>
+                <li>Finalize design plans</li>
+                <li><div>Finish watching video:</div><div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CS Lecture</a></div></li>
+                <li><span>Talk about our feelings</span></li>
+                
+            </ul>
+
+            <h4>New Business</h4>
+            <p>
+                We need to figure out how to secure an A+ first.<br>Next, we need to discuss the best project idea.<br>Lastly, we should figure out what snacks to have.
+            </p>
+
+            <details>
+                <summary><b>Miscellaneous Comments</b></summary>
+                <ul>
+                    <li>Kevin <em>really</em> wants to build a rocket</li>
+                    <li>Sasha will be unavailable <strong>next Monday</strong></li>
+                </ul>
+              </details>
+
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Diagrams">Diagrams</h2>
+            <img src="node.png" alt="Node Diagram" width="400" height="260">
+        </section>
+
+        <hr>
+
+        <section>
+            <h2 id="Video/Audio Recording">Video/Audio Recording</h2>
+            <h4>Meeting Audio Recording:</h4>
+            <audio controls>
+                <source src="OnTheFloor.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <h4>Meeting Video Recording:</h4>
+            <video width="400" height="300" controls>
+                <source src="dance.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <h2 id="Footer">Footer</h2>
+        <p><a href="mailto:zyuen@ucsd.edu">zyuen@ucsd.edu</a></p>
+
+        <h3>Contact Me</h3>
+        <form>
+            <fieldset>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+
+                <p>Select your reason for contact:</p>
+                <input type="radio" id="concern" name="concern" value="concern">
+                <label for="concern">Concern</label><br>
+                <input type="radio" id="other" name="other" value="other">
+                <label for="other">Other</label><br><br>
+
+                <label for="schools">Choose your school from the list:</label>
+                <input list="schools" name="school" id="school">
+                <datalist id="schools">
+                    <option value="UCSD">
+                    <option value="UCLA">
+                    <option value="UCI">
+                    <option value="UCB">
+                    <option value="None"></option>
+                    <option value="Other (type in)">
+                </datalist><br><br>
+
+                <label for="ages">Choose your age:</label>
+                <select name="ages" id="ages">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+
+                <p>Please fill out additional info:</p>
+                <input type="checkbox" id="issue1" name="issue1" value="time">
+                <label for="school"> I have a time sensitive issue</label><br>
+                <input type="checkbox" id="issue2" name="issue2" value="important">
+                <label for="issue"> I have an important issue</label><br><br>
+
+                <p><label for="message">Message:</label></p>
+                <textarea id="message" name="message" rows="5" cols="60"></textarea><br><br>
+
+                <button class="button" type="button">Submit</button>
+            </fieldset>
+        </form>
+    </footer>
+
+  </body>
+</html>
