@@ -41,6 +41,11 @@ h4 { /* box model for h4 using longhand notation */
     border-color:rgb(15, 243, 15); 
     border-width: 2px;
     border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    align-self: auto;
+    flex-basis: auto;
 }
 
 button:hover { /* pseudo-class selector */
