@@ -13,6 +13,8 @@ em {
 .main-title {
     background-color: rgb(241, 245, 174); 
     margin: auto;
+    text-decoration: underline;
+    text-align: center;
 }
 
 h2, h3 { /* box model for h3 using shorthand notation */
