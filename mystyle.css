@@ -1,0 +1,11 @@
+strong { /* element selector */
+    color: red;
+}
+
+i {
+    color: #FFA500;  /* hex code */
+}
+
+em {
+    color: hsl(0, 80%, 58%); /* hue, saturation, lightness, alpha values, relative unit 1 */
+}
