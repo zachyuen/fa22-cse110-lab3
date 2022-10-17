@@ -9,3 +9,7 @@ i {
 em {
     color: hsl(0, 80%, 58%); /* hue, saturation, lightness, alpha values, relative unit 1 */
 }
+
+.main-title {
+    background-color: rgb(241, 245, 174); 
+}
