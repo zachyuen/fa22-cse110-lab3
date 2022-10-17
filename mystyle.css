@@ -15,6 +15,7 @@ em {
     margin: auto;
     text-decoration: underline;
     text-align: center;
+    position: static;
 }
 
 h2, h3 { /* box model for h3 using shorthand notation */
@@ -22,6 +23,7 @@ h2, h3 { /* box model for h3 using shorthand notation */
     border: 3px solid rgb(15, 243, 15); 
     padding: 5px 5px 5px 5px;
     margin: 20px 20px 20px 20px;
+    position: relative;
 }
 
 h4 { /* box model for h4 using longhand notation */
@@ -39,4 +41,12 @@ h4 { /* box model for h4 using longhand notation */
     border-color:rgb(15, 243, 15); 
     border-width: 2px;
     border-radius: 5px;
+}
+
+button:hover { /* pseudo-class selector */
+    color: blue;
+}
+
+button:active {
+    background-color: yellow;
 }
