@@ -18,15 +18,21 @@
             padding: 10px;
             justify-items: start;
         }
+
+        @media only screen and (max-width: 800px) { /* blue background when screen width <= 80px */
+            body {
+                background-color: lightblue;
+            }
+        }
     </style>
   </head>
 
   <body>
     <header>
-        <h1>Meeting Minutes Website</h1>
+        <h1 class="main-title">Meeting Minutes Website</h1>
         <h2 style="color:rgb(10, 63, 127);">Topic: Brainstorming Project Ideas</h2>
         <h2>10-6-2022</h2>
-        <nav>
+        <nav >
             <h2>Navigation</h2>
             <ul>
                 <li><a href="#Meeting-Info">Meeting Info</a></li>
@@ -44,34 +50,35 @@
             <h2 id="Meeting-Info">Meeting Info</h2>
 
             <h4>Attendance:</h4>
-            <ul>
+            <ol>
                 <li>Jeff</li>
                 <li>Kevin</li>
                 <li>Sasha</li>
-            </ul>
+            </ol>
 
             <h4>Agenda:</h4>
+
             <div class="grid-container">
                 <div class="grid-item">1. Icebreaker</div>
                 <div class="grid-item">2. Review</div>
                 <div class="grid-item">3. Brainstorm</div>  
                 <div class="grid-item">4. Plan</div>
                 <div class="grid-item">5. Wrap Up</div>  
-            </div>
+              </div>
 
             <h4>Unfinished Business:</h4>
             <ul>
                 <li>Finish setting guidelines</li>
                 <li>Talk about <i>HTML</i> elements</li>
                 <li>Finalize design plans</li>
-                <li><div>Finish watching video:</div><div><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CS Lecture</a></div></li>
+                <li><div>Finish watching video:<p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">CS Lecture</a></p></div></li>
                 <li><span class="ex1">Talk about our feelings</p></li>
             </ul>
 
             <h4>New Business</h4>
-            <p>
-                We need to figure out how to secure an A+ first.<br>Next, we need to discuss the best project idea.<br>Lastly, we should figure out what snacks to have.
-            </p>
+            <p id="p1">Below is important.</p>
+            <p class="brown">We need to figure out how to secure an A+ first.</p><span class="ex2">^Very important^!</span><br><p>Next, we need to discuss the best project idea. Lastly, we should figure out what snacks to have.</p>
+            
 
             <details>
                 <summary><b>Miscellaneous Comments</b></summary>
@@ -149,9 +156,9 @@
                     <option value="5+">5+</option>
                 </select>
 
-                <p>Please fill out additional info:</p>
+                <p target="t">Please fill out additional info:</p>
                 <input type="checkbox" id="issue1" name="issue1" value="time">
-                <label for="issue1"> I have a time sensitive issue</label><br>
+                <label for="issue1"> I have a time-sensitive issue</label><br>
                 <input type="checkbox" id="issue2" name="issue2" value="important">
                 <label for="issue2"> I have an important issue</label><br><br>
 
