@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "myFont";
+    src: url("Silkscreen-Regular.ttf");
+}
+
 strong { /* element selector */
     color: red;
 }
@@ -16,6 +21,9 @@ em {
     text-decoration: underline;
     text-align: center;
     position: static;
+    max-width: auto;
+    min-width: auto;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2, h3 { /* box model for h3 using shorthand notation */
@@ -24,6 +32,7 @@ h2, h3 { /* box model for h3 using shorthand notation */
     padding: 5px 5px 5px 5px;
     margin: 20px 20px 20px 20px;
     position: relative;
+    font-family: "myFont";
 }
 
 h4 { /* box model for h4 using longhand notation */
