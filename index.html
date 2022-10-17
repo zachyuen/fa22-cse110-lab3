@@ -9,6 +9,15 @@
         span {color: red;}
         span.ex1 {display: inline;}
         span.ex2 {display: block;}
+
+        .grid-container {
+            display: grid;
+            column-gap: 50px;
+            grid-template-columns: auto auto auto;
+            background-color: #5da9e8;
+            padding: 10px;
+            justify-items: start;
+        }
     </style>
   </head>
 
@@ -42,13 +51,13 @@
             </ul>
 
             <h4>Agenda:</h4>
-            <ol>
-                <li>Icebreaker</li>
-                <li>Review</li>
-                <li>Brainstorm</li>
-                <li>Plan</li>
-                <li>Wrap up</li>
-            </ol>
+            <div class="grid-container">
+                <div class="grid-item">1. Icebreaker</div>
+                <div class="grid-item">2. Review</div>
+                <div class="grid-item">3. Brainstorm</div>  
+                <div class="grid-item">4. Plan</div>
+                <div class="grid-item">5. Wrap Up</div>  
+            </div>
 
             <h4>Unfinished Business:</h4>
             <ul>
