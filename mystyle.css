@@ -1,18 +1,21 @@
 @font-face {
     font-family: "myFont";
     src: url("Silkscreen-Regular.ttf");
-}
+  }
 
 strong { /* element selector */
     color: red;
+    font-size: 2ch; /* relative unit 1 */
 }
 
 i {
     color: #FFA500;  /* hex code */
+    font-size: 2em; /* relative unit 2 */
 }
 
 em {
-    color: hsl(0, 80%, 58%); /* hue, saturation, lightness, alpha values, relative unit 1 */
+    color: hsl(0, 80%, 58%); /* hue, saturation, lightness, alpha values */
+    font-size: 3ex; /* relative unit 3 */
 }
 
 .main-title {
@@ -20,24 +23,28 @@ em {
     margin: auto;
     text-decoration: underline;
     text-align: center;
-    position: static;
     max-width: auto;
     min-width: auto;
+    position: static;
     font-family: 'Courier New', Courier, monospace;
 }
-
+  
 h2, h3 { /* box model for h3 using shorthand notation */
+    position: relative;
+    font-family: "myFont";
     width: 220px; /* absolute unit 1 */
     border: 3px solid rgb(15, 243, 15); 
     padding: 5px 5px 5px 5px;
     margin: 20px 20px 20px 20px;
-    position: relative;
-    font-family: "myFont";
 }
 
 h4 { /* box model for h4 using longhand notation */
     width: 5cm; /* absolute unit 2 */
     height: 0.2in; /* absolute unit 3 */
+    border-style: dashed;
+    border-color:rgb(15, 243, 15); 
+    border-width: 2px;
+    border-radius: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 5px;
@@ -46,10 +53,6 @@ h4 { /* box model for h4 using longhand notation */
     margin-bottom: 20px; 
     margin-left: 20px;
     margin-right: 20px;
-    border-style: dashed;
-    border-color:rgb(15, 243, 15); 
-    border-width: 2px;
-    border-radius: 5px;
     display: flex;
     justify-content: flex-start;
     flex-flow: column wrap;
@@ -63,4 +66,37 @@ button:hover { /* pseudo-class selector */
 
 button:active {
     background-color: yellow;
+}
+
+#p1 { /* ID selector */
+    text-align: start;
+    color: red;
+}
+
+* { /* universal selector */
+    color: black;
+}
+
+p[target="t"] { /* attribute selector */
+    background-color: yellow;
+}
+
+div p { /* descendant combinator */
+    background-color: yellow;
+}
+
+li > a { /* child combinator */
+    background-color: rgb(38, 255, 0);
+}
+
+datalist ~ label { /* general sibling combinator */
+    color: red;
+}
+
+select + p { /* adjacent sibling combinator */
+    color: pink;
+}
+
+p.brown { /* Combining two selectors */
+    color: brown;
 }
